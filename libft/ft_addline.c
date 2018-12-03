@@ -3,15 +3,16 @@
 /*                                                              /             */
 /*   ft_addline.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: calin <calin@student.le-101.fr>            +:+   +:    +:    +:+     */
+/*   By: aducimet <aducimet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/11/14 20:15:35 by aducimet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/11/16 12:06:27 by calin       ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/11/29 18:16:38 by aducimet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 char	**ft_addline(char **tab, char *line, int size)
 {
@@ -19,7 +20,7 @@ char	**ft_addline(char **tab, char *line, int size)
 	int		i;
 
 	i = 0;
-	if ((newtab = (char **)malloc(sizeof(char *) * (size + 1))) == NULL)
+	if ((newtab = (char **)malloc(sizeof(char *) * (size + 2))) == NULL)
 		return (0);
 	while (i < size)
 	{
@@ -27,5 +28,6 @@ char	**ft_addline(char **tab, char *line, int size)
 		i++;
 	}
 	newtab[i] = ft_strdup(line);
+	newtab[i + 1] = NULL;
 	return (newtab);
 }

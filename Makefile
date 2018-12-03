@@ -6,19 +6,22 @@
 #    By: aducimet <aducimet@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/11/13 16:45:37 by aducimet     #+#   ##    ##    #+#        #
-#    Updated: 2018/11/21 18:53:01 by aducimet    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/12/03 16:04:12 by aducimet    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
 
 NAME = fillit
 
-SRCS = 	srcs/fillit.c\
+SRCS = 	srcs/parsing.c\
 		srcs/struct_utils.c\
+		srcs/abs_coord.c\
+		srcs/resolve.c\
+		srcs/main.c\
 
-FLAG = -Wall -Wextra -Werror
+FLAG = -Wall -Wextra -Werror -g
 
-CC = gcc $(FLAG) -g
+CC = gcc $(FLAG)
 
 RM = /bin/rm -f
 
