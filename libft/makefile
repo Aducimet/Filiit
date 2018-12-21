@@ -3,10 +3,10 @@
 #                                                               /              #
 #    makefile                                         .::    .:/ .      .::    #
 #                                                  +:+:+   +:    +:  +:+:+     #
-#    By: aducimet <aducimet@student.le-101.fr>      +:+   +:    +:    +:+      #
+#    By: calin <calin@student.le-101.fr>            +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/10/05 11:07:00 by calin        #+#   ##    ##    #+#        #
-#    Updated: 2018/12/03 16:04:21 by aducimet    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/12/03 14:42:11 by calin       ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -85,7 +85,7 @@ SRC = 	ft_bzero.c \
 
 OBJ = $(SRC:.c=.o)
 
-FLAG = -Wall -Wextra -Werror -g
+FLAG = -Wall -Wextra -Werror
 
 CC = gcc $(FLAG)
 

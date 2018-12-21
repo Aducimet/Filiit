@@ -1,30 +1,17 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   abs_coord.c                                      .::    .:/ .      .::   */
+/*   coord.c                                          .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: calin <calin@student.le-101.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/11/27 19:42:39 by aducimet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/12/03 14:54:15 by calin       ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/12/05 16:25:40 by calin       ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
 #include "../fillit.h"
-
-int		add_tetri(char ***atab, t_tetri **afirst)
-{
-	t_tetri *tmp;
-
-	tmp = new_tetri();
-	if (get_coord(*atab, &(tmp->list)) == -1)
-		return (-1);
-	add_elem(afirst, tmp);
-	ft_2dstrdel(atab);
-	return (1);
-}
 
 t_point	get_abs_coord(char **tab)
 {

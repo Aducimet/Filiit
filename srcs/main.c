@@ -3,32 +3,15 @@
 /*                                                              /             */
 /*   main.c                                           .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: aducimet <aducimet@student.le-101.fr>      +:+   +:    +:    +:+     */
+/*   By: calin <calin@student.le-101.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/11/28 16:01:59 by calin        #+#   ##    ##    #+#       */
-/*   Updated: 2018/12/03 15:49:39 by aducimet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/12/05 16:25:36 by calin       ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "../fillit.h"
-#include "../libft/libft.h"
-#include <fcntl.h>
-#include <stdio.h>
-
-void		ft_listdel(t_tetri **list)
-{
-	t_tetri *tmp;
-
-	tmp = NULL;
-	while (*list)
-	{
-		tmp = (*list)->next;
-		free((*list)->list);
-		free(*list);
-		*list = tmp;
-	}
-}
 
 void		ft_print_result(t_tetri *first, char **tab)
 {

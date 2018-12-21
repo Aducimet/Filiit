@@ -3,18 +3,15 @@
 /*                                                              /             */
 /*   resolve.c                                        .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: aducimet <aducimet@student.le-101.fr>      +:+   +:    +:    +:+     */
+/*   By: calin <calin@student.le-101.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/11/28 11:49:32 by calin        #+#   ##    ##    #+#       */
-/*   Updated: 2018/12/03 15:44:12 by aducimet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/12/05 16:28:54 by calin       ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
 #include "../fillit.h"
-#include <stdio.h>
-#include <fcntl.h>
 
 char	**create_map(int size)
 {

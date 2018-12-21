@@ -6,14 +6,12 @@
 /*   By: calin <calin@student.le-101.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/11/07 13:42:49 by calin        #+#   ##    ##    #+#       */
-/*   Updated: 2018/12/03 14:41:11 by calin       ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/12/05 16:25:05 by calin       ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "../fillit.h"
-#include <fcntl.h>
-#include <stdio.h>
 
 int		ft_first_read(int fd1)
 {

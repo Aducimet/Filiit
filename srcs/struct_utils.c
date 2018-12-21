@@ -3,17 +3,15 @@
 /*                                                              /             */
 /*   struct_utils.c                                   .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: aducimet <aducimet@student.le-101.fr>      +:+   +:    +:    +:+     */
+/*   By: calin <calin@student.le-101.fr>            +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/11/21 18:28:53 by aducimet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/12/03 15:42:41 by aducimet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/12/05 16:25:49 by calin       ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "../libft/libft.h"
 #include "../fillit.h"
-#include <stdio.h>
 
 t_point	new_point(int x, int y)
 {
@@ -64,12 +62,14 @@ int		ft_list_len(t_tetri *list)
 	return (size);
 }
 
-int		rccar(int nb)
+int		add_tetri(char ***atab, t_tetri **afirst)
 {
-	int nb_tmp;
+	t_tetri *tmp;
 
-	nb_tmp = nb / 2;
-	while (nb_tmp * nb_tmp > nb)
-		nb_tmp--;
-	return (nb_tmp * nb_tmp == nb ? nb_tmp : nb_tmp + 1);
+	tmp = new_tetri();
+	if (get_coord(*atab, &(tmp->list)) == -1)
+		return (-1);
+	add_elem(afirst, tmp);
+	ft_2dstrdel(atab);
+	return (1);
 }

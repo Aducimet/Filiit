@@ -6,7 +6,7 @@
 /*   By: aducimet <aducimet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/04 15:01:03 by calin        #+#   ##    ##    #+#       */
-/*   Updated: 2018/12/03 16:27:12 by aducimet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/12/03 15:51:22 by aducimet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -34,7 +34,7 @@ void				*ft_memmove(void *dest, const void *src, size_t len);
 void				*ft_memchr(const void *str, int c, size_t len);
 void				*ft_memalloc(size_t len);
 void				ft_bzero(void *str, size_t len);
-void	1			ft_putendl(char const *str);
+void				ft_putendl(char const *str);
 void				ft_putstr(char const *str);
 void				ft_putstr_fd(char const *str, int fd);
 void				ft_putendl_fd(char const *str, int fd);
